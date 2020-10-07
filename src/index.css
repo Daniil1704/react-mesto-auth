@@ -1,13 +1,16 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+@import url(./vendor/normalize.css);
+@import url(./fonts/inter.css);
+@import url(./bloсks/header/header.css);
+@import url(./bloсks/footer/footer.css);
+@import url(./bloсks/popup/popup.css);
+@import url(./bloсks/profile/profile.css);
+@import url(./bloсks/page/page.css);
+@import url(./bloсks/body/body.css);
+@import url(./bloсks/cards/cards.css);
+@import url(./bloсks/card/card.css);
+@import url(./bloсks/popup-picture/popup-picture.css);
+@import url(./bloсks/popup-add/popup-add.css);
+@import url(./bloсks/card/__button-like/_active/card__button-like_active.css);
+@import url(./bloсks/popup/__save/_disabled/popup__save_disabled.css);
+@import url(./bloсks/popup/_opened/popup_opened.css);
+@import url(./bloсks/card/__rubbish/_active/card__rubbish_active.css);
