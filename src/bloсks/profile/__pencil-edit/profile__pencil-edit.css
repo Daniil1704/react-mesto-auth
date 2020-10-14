@@ -1,0 +1,23 @@
+.profile__pencil-edit {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 0;
+    border:none;
+    height: 100%;
+    width: 100%;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    /* background: none; */
+}
+.profile__pencil-edit:hover {
+    opacity: 1;
+    background-color:rgba(0, 0, 0, 0.8);
+    background-image: url(../../../images/pen.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}

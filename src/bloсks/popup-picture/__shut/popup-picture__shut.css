@@ -1,0 +1,19 @@
+.popup-picture__shut {
+    height: 40.7px;
+    width: 40.7px;
+    box-sizing: border-box;
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    background-image: url(../../../images/Close.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    padding: 0;
+    outline: none;
+  }
+  .popup-picture__shut:hover {
+    cursor: pointer;
+    opacity: 0.6;
+  }

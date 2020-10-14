@@ -14,3 +14,5 @@
 @import url(./bloсks/popup/__save/_disabled/popup__save_disabled.css);
 @import url(./bloсks/popup/_opened/popup_opened.css);
 @import url(./bloсks/card/__rubbish/_active/card__rubbish_active.css);
+@import url(./bloсks/login/login.css);
+@import url(./bloсks/infotooltip/infotooltip.css);

@@ -1,0 +1,12 @@
+@import url(../card/__button-like/card__button-like.css);
+@import url(../card/__image/card__image.css);
+@import url(../card/__photo-name/card__photo-name.css);
+@import url(../card/__photo-title/card__photo-title.css);
+@import url(../card/__rubbish/card__rubbish.css);
+@import url(../card/__like/card__like.css);
+@import url(../card/__span-like/card__span-like.css);
+.card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}

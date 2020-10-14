@@ -1,0 +1,16 @@
+
+.card__rubbish {
+    border: none;
+    background-color: transparent;
+    background-image: url(../../../images/rubbish.svg);
+    width: 18px;
+    height: 19.3px;
+    position: absolute;
+    top: 18px;
+    right: 15px;
+    display: none;
+  }
+  .card__rubbish:hover {
+    cursor: pointer;
+    opacity: 0.6;
+  }
