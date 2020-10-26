@@ -1,4 +1,4 @@
 export const Option = {
-    apiUrl: 'http://api.tsyr.students.nomoreparties.co',
+    apiUrl: 'https://api.tsyr.students.nomoreparties.co'
 }
-export const apiUrlAuth = 'http://api.tsyr.students.nomoreparties.co';
+export const apiUrlAuth = 'https://api.tsyr.students.nomoreparties.co';
