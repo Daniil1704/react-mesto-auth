@@ -40,12 +40,17 @@ export const saveToken = (token) => {
             'Authorization': `Bearer ${token}`
         }
     })
-      .then((res) => {
-          if (res.ok) {
-              return res.json();
-          }
-          else {
-              return Promise.reject(`Произошла ошибка: ${res.status}`);
-          }
-      });
+    .then((res) => {
+        if (res.ok) {
+          return res.json();
+        }
+        return Promise.reject(`Ошибка: ${res.status}`);
+    })
+    .then((data) => {
+        return data;
+    })
+    .catch((err) => {
+        console.log(err);
+        return Promise.reject(`Ошибка: ${err.status}`);
+    })
 };
