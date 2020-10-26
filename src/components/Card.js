@@ -12,11 +12,11 @@ function Card(props) {
     } = props
 
     const currentUser = React.useContext(CurrentUserContext);
-    const isMyOwner = card.owner._id === currentUser._id;
+    const isMyOwner = card.owner === currentUser._id;
 
     const cardDeleteButton = (`card__rubbish ${isMyOwner ? 'card__rubbish_active' : ''}`);
 
-    const isLiked = card.likes.some(i => i._id === currentUser._id);
+    const isLiked = card.likes.some(i => i === currentUser._id);
    
     const cardLikeButton = (
         `card__button-like ${isLiked ? 'card__button-like_active' : ''}`

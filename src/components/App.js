@@ -106,7 +106,7 @@ function App() {
   }
 
   function handleCardDelete(card) {
-    const isMyOwner = card.owner._id === currentUser._id;
+    const isMyOwner = card.owner === currentUser._id;
 
     api.deleteCard(card._id, !isMyOwner)
       .then((newCard) => {
@@ -120,7 +120,7 @@ function App() {
   // ____________________Лайки____________________
 
   function handleCardLike(card) {
-    const isLiked = card.likes.some(i => i._id === currentUser._id);
+       const isLiked = card.likes.some(i => i === currentUser._id);
 
     api.changeLikeCardStatus(card._id, !isLiked)
       .then((newCard) => {
