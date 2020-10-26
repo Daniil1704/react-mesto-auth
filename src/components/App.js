@@ -37,6 +37,7 @@ function App() {
 
 
   React.useEffect(() => {
+    if (loggedIn) {
     api.getUserInfo()
       .then((data) => {
         setCurrenUser(data);
@@ -44,7 +45,7 @@ function App() {
       .catch((err) => {
         console.log(`Произошла ошибка: ${err}`);
       });
-  }, []);
+  }}, [loggedIn]);
 
   function handleUpdateUser(data) {
     setIsLoading(true);
@@ -79,6 +80,7 @@ function App() {
   const [cards, setCards] = useState([]);
 
   React.useEffect(() => {
+    if (loggedIn) {
     api.getCards()
       .then((data) => {
         setCards(data);
@@ -86,7 +88,7 @@ function App() {
       .catch((err) => {
         console.log(`Произошла ошибка: ${err}`);
       });
-  }, []);
+  }}, [loggedIn]);
 
   function handleAddPlaceSubmit(data) {
     setIsLoading(true)
