@@ -31,7 +31,6 @@ function App() {
   });
   const history = useHistory();
   const [user, setUser] = useState('');
-  // const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(false);
   const [loggedIn, setLoggedIn] = React.useState(false);
 
@@ -171,6 +170,7 @@ function App() {
     authorize(email, password)
       .then((res) => {
         localStorage.setItem('jwt', res.token);
+        tokenSave();
         setUser(email);
         setEmail('');
         setPassword('');

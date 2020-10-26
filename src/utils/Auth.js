@@ -19,7 +19,10 @@ export const register = (email, password) => {
 export const authorize = (email, password) => {
     return fetch(`${apiUrlAuth}/signin`, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 
+            Accept: 'application/json',
+            'Content-Type': 'application/json' 
+          },
         body: JSON.stringify({ password, email })
     })
     .then((res) => {
@@ -29,7 +32,14 @@ export const authorize = (email, password) => {
         else {
             return Promise.reject(`Произошла ошибка: ${res.status}`);
         }
-    });
+    })
+    .then((data) => {
+        localStorage.setItem('jwt', data.token);
+        return data;
+    })
+    .catch((err) => {
+        console.log(err.message);
+    })
 };
 
 export const saveToken = (token) => {

@@ -3,7 +3,7 @@ import { Option } from './utils.js';
 export class Api {
     constructor(data) {
         this.apiUrl = data.apiUrl;
-        this.headers = data.headers;
+        
     }
 
 
