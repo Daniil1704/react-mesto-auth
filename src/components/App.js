@@ -140,7 +140,7 @@ function App() {
       saveToken(jwt)
         .then((res) => {
           if (res) {
-            setUser(res.data.email)
+            setUser(res.email)
             setLoggedIn(true);
             history.push('/');
           }
