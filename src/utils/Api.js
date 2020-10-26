@@ -78,7 +78,7 @@ export class Api {
     }
 
     changeLikeCardStatus(id, status) {
-        return this._sendRequest(`/cards/likes/${id}`, {
+        return this._sendRequest(`/cards/${id}/likes`, {
             method: `${(status) ? `PUT` : `DELETE`}`,
             headers: {
                 'Content-Type': 'application/json',
